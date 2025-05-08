@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Data Analysis Assistant", layout="wide")
 
 # Set your OpenAI API key directly here
-openai.api_key = "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"  # Replace with your actual OpenAI API key
+openai.api_key = st.secrets["openai"]["api_key"]
 
 # Function to check if API key is valid
 def is_api_key_valid():
